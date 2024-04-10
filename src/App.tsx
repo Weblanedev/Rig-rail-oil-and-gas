@@ -2,25 +2,30 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./App.css";
 import Container from "./Components/Container/Container";
 import LandingPage from "./Components/Home/LandingPage/LandingPage";
+import ContactUs from "./Components/Contact/ContactUs";
 
 const route = createBrowserRouter([
   {
     path: "/",
     element: <Container />,
-    children:[
+    children: [
       {
-        path:"/",
-        element: <LandingPage />
-      }
-    ]
+        path: "/",
+        element: <LandingPage />,
+      },
+      {
+        path: "/contact",
+        element: <ContactUs />,
+      },
+    ],
   },
 ]);
 function App() {
-  return(
+  return (
     <>
-    <RouterProvider router={route} />
+      <RouterProvider router={route} />
     </>
-  )
+  );
 }
 
 export default App;

@@ -86,3 +86,43 @@
     color: #fff;
     background-color: #df6512;
 }
+
+@media screen and (max-width:700px) {
+    .firstSecWrapper{
+        /* width: 85%;
+        height: max-content;
+        display: flex; */
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center;
+        gap: 30px; */
+    }
+
+    .firstSecLeft{
+        width: 100%;
+        /* display: flex;
+        flex-direction: column;
+        gap: 20px; */
+    }
+
+    .firstSecRight{
+        width: 100%;
+        /* display: flex; */
+        flex-direction: column;
+        /* gap: 20px; */
+    }
+
+    .firstSecRightCont{
+        width: 100%;
+        height: 40vh;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+
+    .firstSecRightContimg{
+        height: 85%;
+    }
+    .firstSecRightContBtn{
+        height: 15%;
+    }
+}

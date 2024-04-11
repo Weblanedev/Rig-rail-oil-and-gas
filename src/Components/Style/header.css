@@ -68,22 +68,27 @@
   color: #fff;
 }
 
-.HeaderMenu{
+.HeaderMenu {
   width: 24px;
   height: 24px;
+  display: none;
 }
 
-.HeaderMenu img{
+.HeaderMenu img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 @media screen and (max-width: 700px) {
-  .headerNavs{
+  .headerNavs {
     display: none;
   }
-  .headerButton{
+  .headerButton {
     display: none;
+  }
+
+  .HeaderMenu {
+    display: flex;
   }
 }

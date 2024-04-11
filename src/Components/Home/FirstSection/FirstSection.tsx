@@ -26,12 +26,26 @@ const FirstSection: React.FC = () => {
         </div>
         <div className="firstSecRight">
           <div className="firstSecRightCont">
-            <div className="firstSecRightContimg"><img src="https://pinnacleoilandgas.com/wp-content/uploads/2020/09/Petroleum-Product-Importation.jpg" alt="" /></div>
-            <div className="firstSecRightContBtn">Petroleum Product Importation</div>
+            <div className="firstSecRightContimg">
+              <img
+                src="https://pinnacleoilandgas.com/wp-content/uploads/2020/09/Petroleum-Product-Importation.jpg"
+                alt=""
+              />
+            </div>
+            <div className="firstSecRightContBtn">
+              Petroleum Product Importation
+            </div>
           </div>
           <div className="firstSecRightCont">
-          <div className="firstSecRightContimg"><img src="https://pinnacleoilandgas.com/wp-content/uploads/2021/02/1-Petroleum-Product-Marketing.jpg" alt="" /></div>
-            <div className="firstSecRightContBtn">Petroleum Product Marketing</div>
+            <div className="firstSecRightContimg">
+              <img
+                src="https://pinnacleoilandgas.com/wp-content/uploads/2021/02/1-Petroleum-Product-Marketing.jpg"
+                alt=""
+              />
+            </div>
+            <div className="firstSecRightContBtn">
+              Petroleum Product Marketing
+            </div>
           </div>
         </div>
       </div>

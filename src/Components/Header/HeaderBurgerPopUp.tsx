@@ -39,7 +39,7 @@ const HeaderBurgerPopUp: React.FC<Props> = ({ setMenuPop }) => {
         <p onClick={() => handleNavClick("about")}>About Us</p>
         <p onClick={() => handleNavClick("blog")}>Blog</p>
         <p onClick={() => handleNavClick("contact")}>Contact Us</p>
-        <p className="burgerMenu__getStarted">Get Started</p>
+        <p className="burgerMenu__getStarted">Buy Product</p>
       </div>
     </div>
   );

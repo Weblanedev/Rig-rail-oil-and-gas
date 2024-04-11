@@ -8,12 +8,12 @@ const Header: React.FC = () => {
   const [servicesHover, setServicesHover] = useState<boolean>(false);
   const [menuPop, setMenuPop] = useState<boolean>(false);
   const handleAbout = () => {
-    setServicesHover(false)
-    setAboutHover(true)
+    setServicesHover(false);
+    setAboutHover(true);
   };
   const handleService = () => {
-    setAboutHover(false)
-    setServicesHover(true)
+    setAboutHover(false);
+    setServicesHover(true);
   };
   return (
     <>
@@ -40,12 +40,14 @@ const Header: React.FC = () => {
                 <DDOurServices setServicesHover={setServicesHover} />
               )}
             </p>
-            <a href="/contact"  className="headerNavsText">Contact Us</a>
+            <a href="/contact" className="headerNavsText">
+              Contact Us
+            </a>
           </div>
           <div className="headerButton">
             <button className="headerbtn">Buy Product</button>
           </div>
-          <div className="HeaderMenu">
+          <div className="HeaderMenu" onClick={() => setMenuPop(true)}>
             <img src="/icons/Menu.png" alt="" />
           </div>
         </div>

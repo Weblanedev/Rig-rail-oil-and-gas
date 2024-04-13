@@ -1,0 +1,160 @@
+.productContainer {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  background-color: #f2f5f7;
+  padding-block: 70px;
+}
+
+.productWrapper {
+  width: 95%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.productTop {
+  width: 70%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productTitle {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.producthr {
+  width: 70%;
+}
+
+.productDown {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productCard {
+  width: 23%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding-block-end: 50px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.productCardTop {
+  height: 203px;
+  width: 100%;
+}
+
+.productCardTopImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productCardDown {
+  height: max-content;
+  width: 100%;
+  background-color: #df6512;
+  padding-block: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productCardDownText {
+  text-align: center;
+  width: 80%;
+  color: #fff;
+  font-size: 700;
+}
+
+.productCardDownLast {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.productCardDownLastText1 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.productCardDownLastText2 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.productCardDownLastBtn {
+  width: 115px;
+  height: 42px;
+  border-radius: 20px;
+  font-weight: 700;
+  background-color: #bc0f0f;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.productCardDownLastBtn:hover {
+  background-color: #192437;
+}
+
+@media screen and (max-width:700px) {
+    .productWrapper{
+        width: 90%;
+    }
+    .productTop {
+        width: 100%;
+      }
+
+      .productCardTop{
+        height: 40vh;
+      }
+
+      .productCardTopImg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+      }
+      
+      .productTitle{
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+      }
+
+      .producthr{
+        width: 100%;
+      }
+
+      .productDown {
+        flex-direction: column;
+        gap: 50px;
+      }
+      
+      .productCard {
+        width: 100%;
+      }
+    
+}

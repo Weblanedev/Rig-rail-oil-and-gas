@@ -1,7 +1,7 @@
 import "./ThirdSection.css";
 const ThirdSection: React.FC = () => {
   return (
-    <div className="thirdSectionContainer">
+    <div className="thirdSectionContainer" id="price">
       <div className="thirdSectionWrapper">
         <div className="thirdSectionformContainer">
           <h1 className="thirdSectionFormTitle">Bulk Order</h1>

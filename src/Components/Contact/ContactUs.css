@@ -4,6 +4,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    
     /* position: absolute; */
 }
 
@@ -37,6 +38,8 @@
   justify-content: center;
   /* z-index: 11; */
   margin-top: 100px;
+  margin-bottom: 100px;
+
 }
 
 .GetInTouchWrapper{

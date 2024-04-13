@@ -3,6 +3,11 @@ import "./App.css";
 import Container from "./Components/Container/Container";
 import LandingPage from "./Components/Home/LandingPage/LandingPage";
 import ContactUs from "./Components/Contact/ContactUs";
+import Product from "./Components/ProductPage/Product";
+import Storage from "./Components/ourServices/Storage";
+import OffshoreIntake from "./Components/ourServices/OffshoreIntake";
+import WhatWeDo from "./Components/About/WhatWeDo";
+import Company from "./Components/About/Company";
 
 const route = createBrowserRouter([
   {
@@ -16,6 +21,26 @@ const route = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactUs />,
+      },
+      {
+        path: "/product",
+        element: <Product />,
+      },
+      {
+        path: "/storage",
+        element: <Storage />,
+      },
+      {
+        path: "/offshore",
+        element: <OffshoreIntake />,
+      },
+      {
+        path: "/whatWeDo",
+        element: <WhatWeDo />,
+      },
+      {
+        path: "/company",
+        element: <Company />,
       },
     ],
   },

@@ -154,14 +154,20 @@ option {
 }
 
 .thirdSectionCardLeft {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+}
+
+#thirdSectionCardLeftImage{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .thirdSectionCardLeft img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .thirdSectionCardRight {

@@ -36,9 +36,9 @@ const ThirdSection: React.FC = () => {
               <option value="How Many Litres?">How Many Litres?</option>
             </select>
             <div className="thirdSectionFormBtnContainer">
-              <button type="submit" className="thirdSectionFormBtn">
+              <a href="/checkout" type="submit" className="thirdSectionFormBtn" >
                 ORDER NOW
-              </button>
+              </a>
             </div>
           </form>
         </div>
@@ -67,7 +67,7 @@ const ThirdSection: React.FC = () => {
           <div className="thirdSectionCardsContainer">
             <div className="thirdSectionCard">
               <div className="thirdSectionCardLeft">
-                <img src="./icons/Lorry.png" alt="" />
+                <img src="./icons/Lorry.png" alt="" id="thirdSectionCardLeftImage" />
               </div>
               <div className="thirdSectionCardRight">
                 <p className="thirdSectionCardRightHeader">Next Day Delivery</p>

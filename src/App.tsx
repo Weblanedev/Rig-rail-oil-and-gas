@@ -11,6 +11,7 @@ import Company from "./Components/About/Company";
 import WhoWeAre from "./Components/About/WhoWeAre";
 import PPM from "./Components/ourServices/PPM";
 import LHS from "./Components/ourServices/LHS";
+import Checkout from "./Components/Checkout/Checkout";
 
 const route = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const route = createBrowserRouter([
       {
         path: "/lhs",
         element: <LHS />,
+      },
+      {
+        path: "/checkout",
+        element: <Checkout />,
       },
     ],
   },

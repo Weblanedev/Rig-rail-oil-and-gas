@@ -1,11 +1,21 @@
 import { useNavigate } from "react-router-dom";
 import "./Product.css";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 const Product = () => {
   const nav = useNavigate();
+  // const handleNav = () => {
+  //   nav("/");
+  // };
   const handleNav = () => {
     nav("/");
+
+    setTimeout(() => {
+      const priceSection = document.getElementById("price");
+      if (priceSection) {
+        priceSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 100);
   };
   return (
     <div className="productContainer">
@@ -37,22 +47,19 @@ const Product = () => {
                 Contact us for Price Today
               </p>
               <span style={{ color: "#ff9900" }}>★★★★★</span>
-              <Link
-                to="price"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+              <a
                 onClick={handleNav}
+                href="#price"
                 className="productCardDownLastBtn"
               >
                 <abbr
                   style={{ textDecoration: "none" }}
                   title="Get in touch with us"
                 >
-                  Order Now!
-                </abbr>
-              </Link>
+                  {" "}
+                  Order Now!{" "}
+                </abbr>{" "}
+              </a>
             </div>
           </div>
           <div className="productCard">
@@ -76,7 +83,7 @@ const Product = () => {
                 Contact us for Price Today
               </p>
               <span style={{ color: "#ff9900" }}>★★★★★</span>
-              <Link
+              {/* <Link
                 to="price"
                 spy={true}
                 smooth={true}
@@ -85,13 +92,26 @@ const Product = () => {
                 onClick={handleNav}
                 className="productCardDownLastBtn"
               >
-               <abbr
+                <abbr
                   style={{ textDecoration: "none" }}
                   title="Get in touch with us"
                 >
                   Order Now!
                 </abbr>
-              </Link>
+              </Link> */}
+              <a
+                onClick={handleNav}
+                href="#price"
+                className="productCardDownLastBtn"
+              >
+                <abbr
+                  style={{ textDecoration: "none" }}
+                  title="Get in touch with us"
+                >
+                  {" "}
+                  Order Now!{" "}
+                </abbr>{" "}
+              </a>
             </div>
           </div>
           <div className="productCard">
@@ -115,22 +135,19 @@ const Product = () => {
                 Contact us for Price Today
               </p>
               <span style={{ color: "#ff9900" }}>★★★★★</span>
-              <Link
-                to="price"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
+              <a
                 onClick={handleNav}
+                href="#price"
                 className="productCardDownLastBtn"
               >
                 <abbr
                   style={{ textDecoration: "none" }}
                   title="Get in touch with us"
                 >
-                  Order Now!
-                </abbr>
-              </Link>
+                  {" "}
+                  Order Now!{" "}
+                </abbr>{" "}
+              </a>
             </div>
           </div>
           <div className="productCard">
@@ -152,22 +169,19 @@ const Product = () => {
                 Contact us for Price Today
               </p>
               <span style={{ color: "#ff9900" }}>★★★★★</span>
-              <Link
-                to="price"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={500}
-                className="productCardDownLastBtn"
+              <a
                 onClick={handleNav}
+                href="#price"
+                className="productCardDownLastBtn"
               >
                 <abbr
                   style={{ textDecoration: "none" }}
                   title="Get in touch with us"
                 >
-                  Order Now!
-                </abbr>
-              </Link>
+                  {" "}
+                  Order Now!{" "}
+                </abbr>{" "}
+              </a>
             </div>
           </div>
         </div>

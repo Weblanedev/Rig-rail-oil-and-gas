@@ -28,7 +28,7 @@ const SecondSection: React.FC = () => {
                 alt=""
               />
             </div>
-            <div className="secondSectionPicture1Btn">Offshore intake/offtake Facilities</div>
+            <a href="/offshore" className="secondSectionPicture1Btn">Offshore intake/offtake Facilities</a>
           </div>
           <div className="secondSectionPicture1">
             <div className="secondSectionPicture1Img">
@@ -37,7 +37,7 @@ const SecondSection: React.FC = () => {
                 alt=""
               />
             </div>
-            <div className="secondSectionPicture1Btn">Storage Facilities</div>
+            <a href="/storage" className="secondSectionPicture1Btn">Storage Facilities</a>
           </div>
           <div className="secondSectionPicture1">
             <div className="secondSectionPicture1Img">
@@ -46,7 +46,7 @@ const SecondSection: React.FC = () => {
                 alt=""
               />
             </div>
-            <div className="secondSectionPicture1Btn">Petroleum Service Station</div>
+            <a href="ppm" className="secondSectionPicture1Btn">Petroleum Service Station</a>
           </div>
           <div className="secondSectionPicture1">
             <div className="secondSectionPicture1Img">
@@ -55,7 +55,7 @@ const SecondSection: React.FC = () => {
                 alt=""
               />
             </div>
-            <div className="secondSectionPicture1Btn">Logistics & Haulage Services</div>
+            <a href="lhs" className="secondSectionPicture1Btn">Logistics & Haulage Services</a>
           </div>
         </div>
       </div>

@@ -8,6 +8,9 @@ import Storage from "./Components/ourServices/Storage";
 import OffshoreIntake from "./Components/ourServices/OffshoreIntake";
 import WhatWeDo from "./Components/About/WhatWeDo";
 import Company from "./Components/About/Company";
+import WhoWeAre from "./Components/About/WhoWeAre";
+import PPM from "./Components/ourServices/PPM";
+import LHS from "./Components/ourServices/LHS";
 
 const route = createBrowserRouter([
   {
@@ -41,6 +44,18 @@ const route = createBrowserRouter([
       {
         path: "/company",
         element: <Company />,
+      },
+      {
+        path: "/whoWeAre",
+        element: <WhoWeAre />,
+      },
+      {
+        path: "/ppm",
+        element: <PPM />,
+      },
+      {
+        path: "/lhs",
+        element: <LHS />,
       },
     ],
   },

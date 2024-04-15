@@ -26,6 +26,7 @@
 .headerh3 {
   font-size: 23px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .headerNavs {

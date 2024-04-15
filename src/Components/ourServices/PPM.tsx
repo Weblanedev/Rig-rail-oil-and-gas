@@ -1,15 +1,13 @@
-import "./offshore.css";
-
-const OffshoreIntake = () => {
+const PPM = () => {
   return (
     <div className="offshoreWrap">
       <div className="hero">
         <div className="writebox">
-          <p>Offshore intake/</p>
-          <p>Offtake Facilities</p>
+          <p>Petroleum Products</p>
+          <p> Marketing</p>
           <p id="pp"></p>
         </div>
-        <img src="https://media.istockphoto.com/id/1418267717/photo/aerial-panorama-of-a-cargo-ship-carrying-container-for-import-and-export.jpg?s=612x612&w=0&k=20&c=pjaI0YCs52ZMfNJU-xrihAsOYR_rrH2vunXYjFGwPdA=" />
+        <img src="https://pinnacleoilandgas.com/wp-content/uploads/2021/02/Petroleum-Product-Marketing-2-1.jpg?id=6124" />
       </div>
       <main className="main">
         <div className="writeupwrap">
@@ -32,25 +30,25 @@ const OffshoreIntake = () => {
               with the highest safety standards.
             </p>
             <p>
-              To facilitate efficient load out of products, we have extensive
-              truck gantries with sufficient loading arms to fill and dispatch
-              up to 600 trucks daily. In addition, the facility will give
-              operators access to purpose-built truck parking in the Freezone,
-              reduced time for truck loading and direct access to artery roads
-              leading to the East and North.
+              Our unrivaled consistency and expertise in products delivery
+              resulting in uninterrupted product availability ensure that our
+              customers are supplied with products as at when needed. Our
+              effective and efficient logistics handling strength, coupled with
+              our optimal operations network ensures that customer orders are
+              delivered within the agreed terms and time frames.
             </p>
-            <p>
+            {/* <p>
               The Facility is located within the Lekki Free Trade Zone, giving
               operators and users the advantage of numerous fiscal and economic
               incentives.
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="picswrap">
           <div className="pics">
             <div className="picimg">
               <div className="imgwrap">
-                <h3>Offshore intake/ Offtake Facilities</h3>
+                <h3>Petroleum Products Marketing</h3>
                 <div className="actualimg">
                   <img
                     src="https://media.istockphoto.com/id/1404380618/photo/truck-at-night-on-the-road.webp?b=1&s=170667a&w=0&k=20&c=axrdD6HxrFOxi3ruXatz8H_vwiMyzwlddaBIfxzIIwY="
@@ -76,4 +74,4 @@ const OffshoreIntake = () => {
   );
 };
 
-export default OffshoreIntake;
+export default PPM;

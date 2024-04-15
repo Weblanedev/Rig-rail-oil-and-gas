@@ -38,7 +38,7 @@ const Header: React.FC = () => {
       >
         <div className="headerWrapper">
           <div className="headerLogo">
-            <h3 className="headerh3">Rigrail Oil & Gas</h3>
+            <h3 className="headerh3" onClick={()=>handleNav("/")}>Rigrail Oil & Gas</h3>
           </div>
           <div className="headerNavs">
             <p className="headerNavsText" onClick={()=>handleNav("/")}>Home</p>

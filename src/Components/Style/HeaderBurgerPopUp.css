@@ -38,6 +38,14 @@
   padding: 20px 0px 0px 20px;
 }
 
+.aboutUs__select{
+  width: 90%;
+  color: #fff;
+  background-color: #201f2f;
+  height: 45px;
+  border: 1px solid #df6512;
+}
+
 .burgerMenu__content--container > p {
   font-size: 18px;
   text-transform: uppercase;

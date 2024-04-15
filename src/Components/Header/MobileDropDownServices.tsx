@@ -1,9 +1,7 @@
-import { useNavigate } from "react-router-dom";
+import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
-type Props = {
-  setServicesHover: React.Dispatch<React.SetStateAction<boolean>>;
-};
-const DDOurServices: React.FC<Props> = ({ setServicesHover }) => {
+const MobileDropDownServices = () => {
   const nav = useNavigate();
   const handleServices = (val: string) => {
     if (val === "/storage") {
@@ -17,7 +15,7 @@ const DDOurServices: React.FC<Props> = ({ setServicesHover }) => {
     }
   };
   return (
-    <div className="ddAboutUs" onMouseLeave={() => setServicesHover(false)}>
+    <div className="ddAboutUs" >
       <p className="ddAboutUsText" onClick={() => handleServices("/offshore")}>
         Offshore Intake/Offtake Facilities
       </p>
@@ -28,6 +26,6 @@ const DDOurServices: React.FC<Props> = ({ setServicesHover }) => {
       <p className="ddAboutUsText" onClick={() => handleServices("/lhs")}>Logistics & Haulage Services</p>
     </div>
   );
-};
+}
 
-export default DDOurServices;
+export default MobileDropDownServices

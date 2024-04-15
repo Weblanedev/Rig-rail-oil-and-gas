@@ -31,7 +31,7 @@ const WhatWeDo = () => {
               </a>
             </section>
             <section className="whatWeDoLeftbtn2">
-              <a href="">
+              <a href="/product">
                 <span>Order Products Online</span>
               </a>
             </section>

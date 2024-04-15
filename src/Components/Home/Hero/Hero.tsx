@@ -1,12 +1,17 @@
+import { useNavigate } from "react-router-dom";
 import "../../Style/hero.css";
 const Hero = () => {
+ const nav = useNavigate();
+  const handleNav = ()=>{
+    nav("/product")
+  }
   return (
     <div className="heroContainer">
         <div className="heroText">
         <h3 className="heroIntro">One off Africa's largest offshore</h3>
         <h1 className="heroBigtext">Offshore Petroleum intake/offtake</h1>
         <p className="herosmalltext">and storage terminals...</p>
-        <div className="herobtn">Know More</div>
+        <div className="herobtn" onClick={handleNav}>Know More</div>
         </div>
       <img
       className="heroImage"

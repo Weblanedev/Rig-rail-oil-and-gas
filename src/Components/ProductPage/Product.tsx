@@ -46,7 +46,12 @@ const Product = () => {
                 onClick={handleNav}
                 className="productCardDownLastBtn"
               >
-                Order Now!
+                <abbr
+                  style={{ textDecoration: "none" }}
+                  title="Get in touch with us"
+                >
+                  Order Now!
+                </abbr>
               </Link>
             </div>
           </div>
@@ -80,7 +85,12 @@ const Product = () => {
                 onClick={handleNav}
                 className="productCardDownLastBtn"
               >
-                Order Now!
+               <abbr
+                  style={{ textDecoration: "none" }}
+                  title="Get in touch with us"
+                >
+                  Order Now!
+                </abbr>
               </Link>
             </div>
           </div>
@@ -114,7 +124,12 @@ const Product = () => {
                 onClick={handleNav}
                 className="productCardDownLastBtn"
               >
-                Order Now!
+                <abbr
+                  style={{ textDecoration: "none" }}
+                  title="Get in touch with us"
+                >
+                  Order Now!
+                </abbr>
               </Link>
             </div>
           </div>
@@ -146,7 +161,12 @@ const Product = () => {
                 className="productCardDownLastBtn"
                 onClick={handleNav}
               >
-                Order Now!
+                <abbr
+                  style={{ textDecoration: "none" }}
+                  title="Get in touch with us"
+                >
+                  Order Now!
+                </abbr>
               </Link>
             </div>
           </div>

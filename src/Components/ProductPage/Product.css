@@ -119,6 +119,11 @@
   background-color: #192437;
 }
 
+abbr{
+  text-decoration: none;
+  
+}
+
 @media screen and (max-width:700px) {
     .productWrapper{
         width: 90%;

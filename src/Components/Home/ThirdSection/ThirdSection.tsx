@@ -21,9 +21,16 @@ const ThirdSection: React.FC = () => {
             </div>
             <select className="thirdSectionFormInput" name="" id="">
               <option value="Select Product Type">Select Product Type</option>
-              <option value="Select Product Type">Select Product Type</option>
-              <option value="Select Product Type">Select Product Type</option>
-              <option value="Select Product Type">Select Product Type</option>
+              <option value="Offshore intake/offtake Facilities">
+                Offshore intake/offtake Facilities
+              </option>
+              <option value="Storage Facilities">Storage Facilities</option>
+              <option value="Petroleum Service Station">
+                Petroleum Service Station
+              </option>
+              <option value="Logistics & Haulage Services">
+                Logistics & Haulage Services
+              </option>
             </select>
             <select className="thirdSectionFormInput" name="" id="">
               <option value="How Many Litres?">How Many Litres?</option>
@@ -60,7 +67,7 @@ const ThirdSection: React.FC = () => {
           <div className="thirdSectionCardsContainer">
             <div className="thirdSectionCard">
               <div className="thirdSectionCardLeft">
-                <img src="https://pinnacleoilandgas.com/wp-content/uploads/2020/09/gas-station2.png" alt="" />
+                <img src="./icons/Lorry.png" alt="" />
               </div>
               <div className="thirdSectionCardRight">
                 <p className="thirdSectionCardRightHeader">Next Day Delivery</p>
@@ -87,7 +94,7 @@ const ThirdSection: React.FC = () => {
             </div>
             <div className="thirdSectionCard">
               <div className="thirdSectionCardLeft">
-                <img src="https://pinnacleoilandgas.com/wp-content/uploads/2020/09/gas-station2.png" alt="" />
+                <img src="./icons/profile.png" alt="" />
               </div>
               <div className="thirdSectionCardRight">
                 <p className="thirdSectionCardRightHeader">
@@ -101,7 +108,7 @@ const ThirdSection: React.FC = () => {
             </div>
             <div className="thirdSectionCard">
               <div className="thirdSectionCardLeft">
-                <img src="https://pinnacleoilandgas.com/wp-content/uploads/2020/09/gas-station2.png" alt="" />
+                <img src="./icons/bus.png" alt="bus" />
               </div>
               <div className="thirdSectionCardRight">
                 <p className="thirdSectionCardRightHeader">

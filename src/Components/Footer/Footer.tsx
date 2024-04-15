@@ -44,7 +44,7 @@ const Footer = () => {
         </div>
         <div className="footer__down">
           <a href="/" className="footer__logo">
-            <p className="speedyTrans__newLogo">Rigrail Oil & Gas</p>
+            <p className="speedyTrans__newLogo headerh3">Rigrail Oil & Gas</p>
             {/* <img
               src="https://translang.axiomthemes.com/wp-content/uploads/2017/03/logo.png"
               className="Mainheaderlogoimag"

@@ -8,6 +8,7 @@ type Props = {
 };
 const HeaderBurgerPopUp: React.FC<Props> = ({ setMenuPop }) => {
   const [service, setService] = useState<string>("");
+  console.log(service)
   const nav = useNavigate();
   const handleNavClick = (navItem: string) => {
     if (navItem === "home") {

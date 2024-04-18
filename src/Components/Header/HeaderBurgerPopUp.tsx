@@ -17,7 +17,7 @@ const HeaderBurgerPopUp: React.FC<Props> = ({ setMenuPop }) => {
       nav("/aboutUs");
       setMenuPop(false);
     } else if (navItem === "contact") {
-      nav("/contactUs");
+      nav("/contact");
       setMenuPop(false);
     } else if (navItem === "blog") {
       nav("/blog");
@@ -30,13 +30,13 @@ const HeaderBurgerPopUp: React.FC<Props> = ({ setMenuPop }) => {
     console.log(selectedValue);
     setService(selectedValue)
     setMenuPop(false);
-    if (service === "Storage Facilities") {
+    if (selectedValue === "Storage Facilities") {
       nav("/storage");
-    } else if (service === "Offshore Intake/Offtake Facilities") {
+    } else if (selectedValue === "Offshore Intake/Offtake Facilities") {
       nav("/offshore");
-    } else if (service === "Petroleum Products Marketing") {
+    } else if (selectedValue === "Petroleum Products Marketing") {
       nav("/ppm");
-    } else if (service === "Logistics & Haulage Services") {
+    } else if (selectedValue === "Logistics & Haulage Services") {
       nav("/lhs");
     }
   };
@@ -50,7 +50,7 @@ const HeaderBurgerPopUp: React.FC<Props> = ({ setMenuPop }) => {
         <select 
             onChange={handleChange}
             className="aboutUs__select" >
-          <option value="About Us">About Us</option>
+          <option value="About Us" disabled selected>About Us</option>
           <option
             value="Offshore Intake/Offtake Facilities"
           >

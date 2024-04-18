@@ -1,0 +1,40 @@
+.checkoutContainer {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+.checkoutTitle{
+  width: 70%;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  border-bottom: 1px solid #8a8f91;
+  margin-bottom: 50px;
+}
+
+.checkouttext{
+  font-size: 38px;
+  color: #8a8f91;
+  font-weight: 400;
+}
+
+.CheckoutWrapper {
+  width: 70%;
+  height: max-content;
+  display: flex;
+
+}
+
+.checkoutLeft {
+    width: 50%;
+}
+
+.checkoutRight {
+    width: 50%;
+}

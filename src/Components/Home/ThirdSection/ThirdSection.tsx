@@ -1,5 +1,50 @@
+import { useState } from "react";
 import "./ThirdSection.css";
+import { useNavigate } from "react-router-dom";
+
+// interface UserInfo {
+//   fullName: string;
+//   companyName: string;
+//   productType: string;
+// }
 const ThirdSection: React.FC = () => {
+  const [fullName, setFullName] = useState<string>("");
+  const [companyName, setCompanyName] = useState<string>("");
+  const [deliveryAddress, setDeliveryAddress] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
+  const [phoneNumber, setPhoneNumber] = useState<string>("");
+  const [productType, setProductType] = useState<string>("");
+  const nav = useNavigate();
+
+  const handleProductType = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const product = e.target.value;
+    console.log(product);
+    setProductType(product);
+    // console.log(productType);
+    // setUserInfo((p)=>({...p, productType:product}))
+    // console.log(userInfo.productType);
+  };
+  const handleOrderNow = () => {
+    if (
+      fullName &&
+      companyName &&
+      deliveryAddress &&
+      email &&
+      phoneNumber &&
+      productType
+    ) {
+      const userInfo = {
+        fullName,
+        companyName,
+        deliveryAddress,
+        email,
+        phoneNumber,
+        productType,
+      };
+      localStorage.setItem("userInfo", JSON.stringify(userInfo));
+      nav("/checkout");
+    }
+  };
   return (
     <div className="thirdSectionContainer" id="price">
       <div className="thirdSectionWrapper">
@@ -7,20 +52,44 @@ const ThirdSection: React.FC = () => {
           <h1 className="thirdSectionFormTitle">Bulk Order</h1>
           <form action="" method="post" className="thirdSectionForm">
             <div className="thirdSectionFormName">
-              <input type="text" placeholder="Full Name" />
-              <input type="text" placeholder="Company Name" />
+              <input
+                type="text"
+                placeholder="Full Name"
+                onChange={(e) => setFullName(e.target.value)}
+              />
+              <input
+                type="text"
+                placeholder="Company Name"
+                onChange={(e) => setCompanyName(e.target.value)}
+              />
             </div>
             <input
               className="thirdSectionFormInput"
               type="Address"
               placeholder="Your Delivery Address"
+              onChange={(e) => setDeliveryAddress(e.target.value)}
             />
             <div className="thirdSectionFormName">
-              <input type="email" placeholder="Email Address" />
-              <input type="number" placeholder="Phone No" />
+              <input
+                type="email"
+                placeholder="Email Address"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <input
+                type="number"
+                placeholder="Phone No"
+                onChange={(e) => setPhoneNumber(e.target.value)}
+              />
             </div>
-            <select className="thirdSectionFormInput" name="" id="">
-              <option value="Select Product Type">Select Product Type</option>
+            <select
+              className="thirdSectionFormInput"
+              name=""
+              id=""
+              onChange={handleProductType}
+            >
+              <option value="Select Product Type" disabled>
+                Select Product Type
+              </option>
               <option value="Offshore intake/offtake Facilities">
                 Offshore intake/offtake Facilities
               </option>
@@ -35,10 +104,10 @@ const ThirdSection: React.FC = () => {
             <select className="thirdSectionFormInput" name="" id="">
               <option value="How Many Litres?">How Many Litres?</option>
             </select>
-            <div className="thirdSectionFormBtnContainer">
-              <a href="/checkout" type="submit" className="thirdSectionFormBtn" >
+            <div className="thirdSectionFormBtnContainer hover:cursor-pointer">
+              <p className="thirdSectionFormBtn" onClick={handleOrderNow}>
                 ORDER NOW
-              </a>
+              </p>
             </div>
           </form>
         </div>
@@ -67,7 +136,11 @@ const ThirdSection: React.FC = () => {
           <div className="thirdSectionCardsContainer">
             <div className="thirdSectionCard">
               <div className="thirdSectionCardLeft">
-                <img src="./icons/Lorry.png" alt="" id="thirdSectionCardLeftImage" />
+                <img
+                  src="./icons/Lorry.png"
+                  alt=""
+                  id="thirdSectionCardLeftImage"
+                />
               </div>
               <div className="thirdSectionCardRight">
                 <p className="thirdSectionCardRightHeader">Next Day Delivery</p>

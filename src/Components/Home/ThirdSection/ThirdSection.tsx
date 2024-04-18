@@ -101,9 +101,9 @@ const ThirdSection: React.FC = () => {
                 Logistics & Haulage Services
               </option>
             </select>
-            <select className="thirdSectionFormInput" name="" id="">
+            {/* <select className="thirdSectionFormInput" name="" id="">
               <option value="How Many Litres?">How Many Litres?</option>
-            </select>
+            </select> */}
             <div className="thirdSectionFormBtnContainer hover:cursor-pointer">
               <p className="thirdSectionFormBtn" onClick={handleOrderNow}>
                 ORDER NOW

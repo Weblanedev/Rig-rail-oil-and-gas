@@ -176,7 +176,7 @@ const Contact = () => {
                 Mail Us
               </h4>
               <p className="text-green-500 leading-[16px]">
-              support@africaRigrail .com
+              support@rigrail .ng
               </p>
             </div>
           </div>

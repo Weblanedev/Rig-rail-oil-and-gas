@@ -45,7 +45,7 @@ const Footer = () => {
  <Link
             to="/donation"
              className="text-white text-xl flex gap-[20px]">
-        Send someone a gift card today <img src={donate} className="w-32"></img>
+        Feel free to contribute <img src={donate} className="w-32"></img>
       </Link>
  </div>
     </div>

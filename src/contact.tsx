@@ -165,7 +165,7 @@ const Contact = () => {
                 Call Us
               </h4>
               <p className="text-green-500 leading-[16px]">
-                +234-818-206-5842
+                +234-908-278-5945
               </p>
             </div>
           </div>
@@ -176,7 +176,7 @@ const Contact = () => {
                 Mail Us
               </h4>
               <p className="text-green-500 leading-[16px]">
-              support@africaRigrail .com
+              support@rigrail .ng
               </p>
             </div>
           </div>

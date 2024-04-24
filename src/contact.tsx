@@ -187,7 +187,7 @@ const Contact = () => {
                 Address
               </h4>
               <p className="text-green-500 leading-normal">
-                Lagos, Nigeira
+              B2U07 Horizon 1 Lekki Gardens, 235 Kusenla Rd, Lekki, Lagos
               </p>
             </div>
           </div>
